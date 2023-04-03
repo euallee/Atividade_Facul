@@ -17,7 +17,7 @@ carrinhoReal = []
 carrinhoKg.append(kgCompra1)
 carrinhoKg.append(kgCompra2)
 kg = sum(carrinhoKg)
-#print(f"Total Kg: {kg:.0f}Kg")
+#print(f"Total Kg: {kg:,.0f}Kg")
 
 while True:
     pagamento = input('''
@@ -54,26 +54,26 @@ if kgCompra1 <= 5:
     valor1 = 2.5
     morangoReal1 = kgCompra1 * valor1
     qtd1 = (kgCompra1 * valor1)/valor1
-    #print(f"Preço do morango até 5Kg: R${morangoReal1:.2f}")
+    #print(f"Preço do morango até 5Kg: R${morangoReal1:,.2f}")
     carrinhoReal.append(morangoReal1)
 else:
     valor1 = 2.2
     morangoReal1 = kgCompra1 * valor1
     qtd1 = (kgCompra1 * valor1)/valor1
-    #print(f"Preço do morango depois de 5Kg: R${morangoReal1:.2f}")
+    #print(f"Preço do morango depois de 5Kg: R${morangoReal1:,.2f}")
     carrinhoReal.append(morangoReal1)
 
 if kgCompra2 <= 5:
     valor2 = 1.8
     macaReal2 = kgCompra2 * valor2
     qtd2 = (kgCompra2 * valor2)/valor2
-    #print(f"Preço da maçã até 5Kg: R${macaReal2:.2f}")
+    #print(f"Preço da maçã até 5Kg: R${macaReal2:,.2f}")
     carrinhoReal.append(macaReal2)
 else:
     valor2 = 1.5
     macaReal2 = kgCompra2 * valor2
     qtd2 = (kgCompra2 * valor2)/valor2
-    #print(f"Preço da maçã depois de 5Kg: R${macaReal2:.2f}")
+    #print(f"Preço da maçã depois de 5Kg: R${macaReal2:,.2f}")
     carrinhoReal.append(macaReal2)
 
 real = sum(carrinhoReal)
